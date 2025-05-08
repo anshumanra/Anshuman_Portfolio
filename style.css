@@ -1,0 +1,209 @@
+/* General */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+body {
+  font-family: 'Outfit', sans-serif;
+  background-color: #f5f5f5;
+  color: #333;
+  transition: all 0.4s ease;
+}
+
+/* Header */
+header {
+  position: fixed;
+  top: 0;
+  width: 100%;
+  background: white;
+  box-shadow: 0 2px 8px rgba(0,0,0,0.05);
+  z-index: 1000;
+}
+nav {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 1rem 2rem;
+  max-width: 1100px;
+  margin: auto;
+}
+.logo {
+  font-size: 1.5rem;
+  font-weight: bold;
+}
+nav ul {
+  list-style: none;
+  display: flex;
+  gap: 1rem;
+}
+nav ul li a, .resume-btn, .theme-toggle {
+  text-decoration: none;
+  color: #333;
+  font-weight: 500;
+}
+.resume-btn {
+  background: #ffd700;
+  padding: 0.4rem 0.8rem;
+  border-radius: 10px;
+}
+.resume-btn:hover {
+  background: #ffb700;
+}
+.theme-toggle {
+  background: none;
+  border: none;
+  font-size: 1.2rem;
+  cursor: pointer;
+}
+
+/* Hero */
+.hero {
+  height: 100vh;
+  background: linear-gradient(to right, #0f2027, #203a43, #2c5364);
+  color: white;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  padding-top: 5rem;
+}
+.profile-img {
+  width: 200px;
+  height: 200px;
+  object-fit: cover;
+  border-radius: 50%;
+  border: 4px solid #ffd700;
+  margin-bottom: 1.5rem;
+}
+.btn {
+  background: #ffd700;
+  color: black;
+  padding: 0.75rem 1.5rem;
+  border-radius: 30px;
+  font-weight: bold;
+  text-decoration: none;
+}
+.btn:hover {
+  background: #ffbb00;
+}
+.center-btn {
+  margin-top: 20px;
+}
+
+/* Section */
+.section {
+  padding: 5rem 2rem;
+  max-width: 1000px;
+  margin: auto;
+}
+.section h2 {
+  text-align: center;
+  font-size: 2.5rem;
+  margin-bottom: 2rem;
+}
+
+/* Cards */
+.cards {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 2rem;
+  justify-content: center;
+}
+.card {
+  background: white;
+  padding: 2rem;
+  border-radius: 10px;
+  width: 280px;
+  box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+  transition: transform 0.3s;
+}
+.card:hover {
+  transform: translateY(-10px);
+}
+
+/* Skills */
+.skill-bars {
+  max-width: 600px;
+  margin: auto;
+}
+.skill {
+  margin-bottom: 1.5rem;
+}
+.bar {
+  background: #ddd;
+  height: 10px;
+  border-radius: 20px;
+  margin-top: 5px;
+}
+.level {
+  height: 10px;
+  background: #007bff;
+  border-radius: 20px;
+}
+
+/* Certificates */
+.certificate-buttons {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 1rem;
+}
+.cert-btn {
+  background-color: #4a90e2;
+  color: white;
+  padding: 0.75rem 1.5rem;
+  border-radius: 30px;
+  font-weight: 600;
+  text-decoration: none;
+}
+.cert-btn:hover {
+  background-color: #3b7cd1;
+}
+
+/* Contact Buttons */
+.contact-buttons {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 1rem;
+}
+.contact-btn {
+  background-color: #222;
+  color: white;
+  padding: 0.75rem 1.5rem;
+  border-radius: 30px;
+  font-weight: 600;
+  text-decoration: none;
+}
+.contact-btn:hover {
+  background: #007bff;
+}
+
+/* Footer */
+footer {
+  text-align: center;
+  padding: 2rem;
+  background: #111;
+  color: white;
+}
+
+/* Dark Mode */
+body.dark {
+  background-color: #121212;
+  color: #eee;
+}
+body.dark header, body.dark .alt {
+  background: #1e1e1e;
+}
+body.dark nav ul li a,
+body.dark .logo {
+  color: #eee;
+}
+body.dark .card {
+  background-color: #222;
+}
+body.dark .btn, body.dark .resume-btn, body.dark .cert-btn, body.dark .contact-btn {
+  background-color: #ffd700;
+  color: black;
+}

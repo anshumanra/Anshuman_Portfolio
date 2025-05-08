@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Anshuman Ray - Portfolio</title>
+  <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@300;500;700&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="style.css" />
+  <link rel="stylesheet" href="https://unpkg.com/aos@2.3.1/dist/aos.css" />
+</head>
+<body>
+
+  <header>
+    <nav>
+      <div class="logo">Anshuman Ray</div>
+      <ul>
+        <li><a href="#about">About</a></li>
+        <li><a href="#projects">Projects</a></li>
+        <li><a href="#skills">Skills</a></li>
+        <li><a href="#education">Education</a></li>
+        <li><a href="#certificates">Certificates</a></li>
+        <li><a href="#contact">Contact</a></li>
+        <li><a href="Anshuman_12212999.pdf" target="_blank" class="resume-btn">Resume</a></li>
+        <li><button id="toggle-theme" class="theme-toggle">🌙</button></li>
+      </ul>
+    </nav>
+  </header>
+
+  <section class="hero" data-aos="fade-up">
+    <div class="hero-content">
+      <img src="profile.jpg" alt="Anshuman Ray" class="profile-img" />
+      <div class="hero-text">
+        <h1>Hello, I'm Anshuman</h1>
+        <p>A passionate Python Developer, Tester & Problem Solver</p>
+        <div class="center-btn">
+        <a href="#projects" class="btn">View My Work</a>
+      </div>
+    </div>
+  </section>
+
+  <section id="about" class="section" data-aos="fade-up">
+    <h2>About Me</h2>
+    <p>I am currently pursuing B.Tech in CSE at LPU. I've built chatbots, games, stock tracking tools, and REST API test automation using REST-assured. I specialize in building efficient, clean, and scalable applications.</p>
+  </section>
+
+  <section id="projects" class="section alt" data-aos="fade-up">
+    <h2>Projects</h2>
+    <div class="cards">
+      <a href="https://github.com/anshumanra/Codealpha_Hangman_game" target="_blank" class="card">
+        <h3>Hangman Game</h3>
+        <p>Interactive Python game with levels and real-time feedback.</p>
+      </a>
+      <a href="https://github.com/anshumanra/Codealpha_basic_chatbot" target="_blank" class="card">
+        <h3>Basic Chatbot</h3>
+        <p>Context-aware chatbot using NLTK with fallback response patterns.</p>
+      </a>
+      <a href="https://github.com/anshumanra/Codealpha_stock_portfolio_tracker" target="_blank" class="card">
+        <h3>Stock Portfolio Tracker</h3>
+        <p>Track live stock prices using Alpha Vantage API with Python UI.</p>
+      </a>
+      <a href="https://github.com/anshumanra/E-Commerce-API-Testing" target="_blank" class="card">
+        <h3>E-Commerce API Testing</h3>
+        <p>RESTful API testing using REST-assured, Postman, and JSON-server.</p>
+      </a>
+    </div>
+  </section>
+
+  <section id="skills" class="section" data-aos="fade-right">
+    <h2>Skills</h2>
+    <div class="skill-bars">
+      <div class="skill"><span>Python</span><div class="bar"><div class="level" style="width: 90%"></div></div></div>
+      <div class="skill"><span>Java</span><div class="bar"><div class="level" style="width: 80%"></div></div></div>
+      <div class="skill"><span>Selenium</span><div class="bar"><div class="level" style="width: 85%"></div></div></div>
+      <div class="skill"><span>Android Studio</span><div class="bar"><div class="level" style="width: 75%"></div></div></div>
+      <div class="skill"><span>Postman / SoapUI</span><div class="bar"><div class="level" style="width: 80%"></div></div></div>
+      <div class="skill"><span>API Integration</span><div class="bar"><div class="level" style="width: 85%"></div></div></div>
+    </div>
+  </section>
+
+  <section id="education" class="section alt" data-aos="fade-up">
+    <h2>Education</h2>
+    <p>B.Tech in Computer Science, Lovely Professional University (2022–present)</p>
+    <p>Senior Secondary, KV No.1 Amritsar Cantt (2021)</p>
+    <p>Secondary Education, KV No.1 Amritsar Cantt (2019)</p>
+  </section>
+
+  <section id="certificates" class="section" data-aos="fade-up">
+    <h2>Certificates</h2>
+    <div class="certificate-buttons">
+      <a href="https://coursera.org/verify/G70T284BCVK3" target="_blank" class="cert-btn">🐍 Python Basics - Coursera (Apr 2025)</a>
+      <a href="https://coursera.org/verify/5D9GYIB7IEL2" target="_blank" class="cert-btn">🔧 Web & Mobile Testing - Coursera (Dec 2024)</a>
+      <a href="https://drive.google.com/file/d/18I_M8RbURRfW5EmpsY127mWWDw9BXoxg/view" target="_blank" class="cert-btn">📘 DSA - Board Infinity (May 2024)</a>
+    </div>
+  </section>
+
+  <section id="contact" class="section" data-aos="zoom-in">
+    <h2>Contact</h2>
+    <div class="contact-buttons">
+      <a href="mailto:raianshuman.ar@gmail.com" class="contact-btn">📧 Email Me</a>
+      <a href="tel:+917889718918" class="contact-btn">📱 Call Me</a>
+      <a href="https://linkedin.com/in/anshumanray2004" target="_blank" class="contact-btn">🔗 LinkedIn</a>
+      <a href="https://github.com/anshumanra" target="_blank" class="contact-btn">💻 GitHub</a>
+    </div>
+  </section>
+
+  <footer>
+    <p>&copy; 2025 Anshuman Ray. All rights reserved.</p>
+  </footer>
+
+  <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+  <script>
+    AOS.init({ duration: 1000, once: true });
+    const toggle = document.getElementById('toggle-theme');
+    toggle.addEventListener('click', () => {
+      document.body.classList.toggle('dark');
+      toggle.textContent = document.body.classList.contains('dark') ? '☀️' : '🌙';
+    });
+  </script>
+
+</body>
+</html>
